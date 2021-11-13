@@ -11,12 +11,13 @@ h1{
 }
 .container{
     display: flex;
-    width: 40%;
+    width: 35%;
     height: 40vh;
-    
+    margin-top: ;
     background-color: #fff;
     margin-left: 300px;
     align-items: center;
     justify-content: center;
+    border-radius: 2rem;
 
 }
