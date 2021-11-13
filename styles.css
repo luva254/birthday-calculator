@@ -9,3 +9,14 @@ h1{
     font-weight: 200;
     text-align: center;
 }
+.container{
+    display: flex;
+    width: 40%;
+    height: 40vh;
+    
+    background-color: #fff;
+    margin-left: 300px;
+    align-items: center;
+    justify-content: center;
+
+}
