@@ -41,10 +41,10 @@ const female = {
     if (gender==undefined){
         alert("Please select a gender!")
     }
-    if(date==NaN){
+    if(!date){
         alert("Please select a date!!")
     }
-    console.log(date);
+    
     let dayOfWeek = new Date(date).getDay()
     console.log(dayOfWeek);
     var userDay=day[dayOfWeek]
