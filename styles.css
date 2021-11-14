@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    /*background-color: rgb(99, 68, 57);*/
+    
     box-sizing: border-box;
 }
 h1{
@@ -13,6 +13,13 @@ body{
    /* background-image: url(https://i.pinimg.com/originals/be/40/30/be40308d1e5b4f89927b970dfef2dfb1.gif) ;*/
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: rgba(131, 48, 18, 0.356);
+}
+.bi{
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    margin-left: 50px;
+    font-weight: 600;
 }
 .container{
     width: 300px;
