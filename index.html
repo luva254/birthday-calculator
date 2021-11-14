@@ -11,20 +11,20 @@
  
  <h1>This is an age calculator that outputs your<br> Akan name</h1>
     <div class="container">
-        <div class="form">
+        <div class="form" id="frm">
             <form class="Birthday-form">
                 <p class="bi">Input your birthday</p>
-                    <input class="dmy" type="date" name="begin" 
+                    <input id="date" class="dmy" type="date" name="begin" 
                 placeholder="dd-mm-yyyy" value=""
              min="1900-01-01" max="2099-12-31">
                 
              <div class="gender-buttons">
                  <p>Select your gender</p>
-                <input class="m-input"type="radio" name="gender" value="male"> Male        
-             <input class="m-input"type="radio" name="gender" value="female"> Female       
+                <input id="gender" class="m-input"type="radio" name="gender" value="male"> Male        
+             <input id="gender" class="m-input"type="radio" name="gender" value="female"> Female       
              </div>
                 
-                <button class="submit" id="smt" >submit </button>
+             <button class="submit" onsubmit="AkanNameGenerate()" type="submit" >Submit</button>
                 
             </form>
         </div>

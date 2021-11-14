@@ -18,12 +18,27 @@ const female = {
      Saturday: "Ama"
    }
 
-    if(male){
-        const male="Sunday"
-    }
-   document.getElementById("smt").addEventListener("click", function () {
-      
-    alert("Your name is Kwasi")
+   let buttonOnsubmit = document.getElementById("btn-submit");
+   buttonOnsubmit.addEventListener("click", (e) => {
+       e.preventDefault();
+       generateName(e);
+   });
+   var name = AkanNameGenerate => {
+    
+    let date = document.getElementById('date').value;
+    let gender = document.getElementById('gender').value;
 
-});
+    let dayOfWeek = new Date(day).getDay()
+
+    if (gender == 'female') {
+        console.log();
+        (`You were born on a ${weekDays[dayOfWeek]} and your Akan name is ${femaleAkanNames[dayOfWeek]}`)
+    } else if (gender == 'male') {
+        console.log();
+        (`You were born on a ${weekDays[dayOfWeek]} and your Akan name is ${maleAkanNames[dayOfWeek]}`)
+    } else {
+        console.log('You have not selected anything');
+    }
+}
+
 
