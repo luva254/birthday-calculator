@@ -9,19 +9,22 @@
 </head>
 <body>
  <script src="script.js"></script>
- <h1>This is a simple age calculator</h1>
+ <h1>This is an age calculator that outputs your<br> Akan name</h1>
     <div class="container">
-        <div class="card">
-            <div class="form">
-                <form class="Birthday form">
-                    <input type="date" name="begin" 
-        placeholder="dd-mm-yyyy" value=""
-        min="1900-01-01" max="2099-12-31">
-        <input type="radio" name="gender" value="male" id="m input"> Male<br>
-        <input type="radio" name="gender" value="female" id="f input"> Female<br>
-        <button class="submit">submit</button>
-                </form>
-            </div>
+        <div class="form">
+            <form class="Birthday-form">
+                    <input class="dmy" type="date" name="begin" 
+                placeholder="dd-mm-yyyy" value=""
+             min="1900-01-01" max="2099-12-31">
+                
+             <div class="gender-buttons">
+                 <p>Select your gender</p>
+                <input class="m-input"type="radio" name="gender" value="male"> Male        
+             <input class="m-input"type="radio" name="gender" value="female"> Female       
+             </div>
+                
+                <button class="submit">submit</button>
+            </form>
         </div>
     </div>
 </body>
