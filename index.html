@@ -20,11 +20,13 @@
                 
              <div class="gender-buttons">
                  <p>Select your gender</p>
-                <input id="gender" class="m-input"type="radio" name="gender" value="male"> Male        
-             <input id="gender" class="m-input"type="radio" name="gender" value="female"> Female       
+                <input id="m-gender" class="m-input"type="radio" name="gender" value="male">    
+                <label for="m-male">male</label>   
+                <input id="f-gender" class="m-input"type="radio" name="gender" value="female"> 
+                <label for="f-gender">female</label>     
              </div>
                 
-             <button class="submit" onsubmit="AkanNameGenerate()" type="submit" >Submit</button>
+             <button class="submit" id="smt"  type="submit" >Submit</button>
                 
             </form>
         </div>

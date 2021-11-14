@@ -17,28 +17,43 @@ const female = {
      Friday: "Afua",
      Saturday: "Ama"
    }
+    const day ={
+                0:"Sunday",
+                1:"Monday",
+                2:"Tuesday",
+                3:"Wednesday",
+                4:"Thursday",
+                5:"Friday",
+                6:"saturday"
+            }
 
-   let buttonOnsubmit = document.getElementById("btn-submit");
-   buttonOnsubmit.addEventListener("click", (e) => {
-       e.preventDefault();
-       generateName(e);
-   });
-   var name = AkanNameGenerate => {
-    
+   document.getElementById("smt").addEventListener("click",function(e){
+       e.preventDefault()
     let date = document.getElementById('date').value;
-    let gender = document.getElementById('gender').value;
-
-    let dayOfWeek = new Date(day).getDay()
-
-    if (gender == 'female') {
-        console.log();
-        (`You were born on a ${weekDays[dayOfWeek]} and your Akan name is ${femaleAkanNames[dayOfWeek]}`)
-    } else if (gender == 'male') {
-        console.log();
-        (`You were born on a ${weekDays[dayOfWeek]} and your Akan name is ${maleAkanNames[dayOfWeek]}`)
-    } else {
-        console.log('You have not selected anything');
+    var gender
+    var genderArray=document.getElementsByName("gender")
+    if (genderArray[0].checked == true){
+        gender="male"
     }
-}
-
-
+    if (genderArray[1].checked == true){
+        gender="female"
+    }
+    if (gender==undefined){
+        alert("Please select a gender!")
+    }
+    if(date==NaN){
+        alert("Please select a date!!")
+    }
+    console.log(date);
+    let dayOfWeek = new Date(date).getDay()
+    console.log(dayOfWeek);
+    var userDay=day[dayOfWeek]
+    console.log(userDay);
+    if (gender=="male"){
+      alert(male[userDay])
+    }
+    if (gender=="female"){
+        alert(female[userDay])
+      }
+    
+   })
